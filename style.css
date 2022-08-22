@@ -20,11 +20,21 @@ body{
     padding-top: var(--default-space);
     padding-right: var(--default-space);
     padding-bottom: 24px;
+    font-family: 'Righteous', cursive;
 }
 
 header{
-    background-color: aqua;
     height: 48px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
 }
 
 main{
