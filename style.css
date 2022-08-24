@@ -41,6 +41,7 @@ main{
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    position: relative;
 }
 
 .title{
@@ -64,19 +65,33 @@ main{
     z-index: -1;
 }
 
+.pikachu{
+    grid-column: 1/-1;
+    place-self: center;
+    position: absolute;
+}
+
 .description{
     grid-column: 1/7;
     place-self: center start;
     color: var(--secondary-color);
+    z-index: 2;
 }
 
 .description__title{
     font-size: 4rem;
+    object-position: top;
 }
 
 .description__text{
     font-size: 1.2rem;
     width: 490px;
+}
+
+@media(max-width: 770px) {
+    .description__text {
+        display: none;
+    }
 }
 
 .action{
@@ -91,9 +106,11 @@ main{
     color: var(--white);
     font-size: 3rem;
     text-decoration: none;
+    z-index: 2;
 }
 
 footer{
     text-align: center;
     color: var(--secondary-color);
+    z-index: 2;
 }
