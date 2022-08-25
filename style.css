@@ -107,6 +107,14 @@ main{
     font-size: 3rem;
     text-decoration: none;
     z-index: 2;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.action:hover{
+    background-color: #ffffff;
+    color: var(--secondary-color);
 }
 
 footer{
