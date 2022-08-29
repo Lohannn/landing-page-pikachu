@@ -66,9 +66,11 @@ main{
 }
 
 .pikachu{
-    grid-column: 1/-1;
     place-self: center;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .description{
@@ -86,12 +88,6 @@ main{
 .description__text{
     font-size: 1.2rem;
     width: 490px;
-}
-
-@media(max-width: 770px) {
-    .description__text {
-        display: none;
-    }
 }
 
 .action{
@@ -121,49 +117,4 @@ footer{
     text-align: center;
     color: var(--secondary-color);
     z-index: 2;
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    body {
-        padding: 0px;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    .logo {
-        padding-top: 48px;
-        padding-left: 48px;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    .pikachu {
-        
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    .action {
-        position: absolute;
-        padding: 0px;
-        border-radius: 0px;
-        width: 100vw;
-        place-self: end;
-        bottom: -20px;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    footer {
-        text-align: start;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    .copyright {
-        position: absolute;
-        top: 740px;
-        left: 90px;
-        width: 800px;
-    }
 }
