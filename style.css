@@ -69,6 +69,7 @@ main {
     grid-column: 1/7;
     place-self: center start;
     color: var(--secondary-color);
+    z-index: 2;
 }
 
 .description__title {
@@ -96,6 +97,7 @@ main {
     border-radius: 20px;
     transition: 0.5s;
     cursor: pointer;
+    z-index: 2;
 }
 
 .action:hover {
@@ -148,5 +150,34 @@ footer {
     }
     footer {
         display: none;
+    }
+}
+
+
+/*MOBILE*/
+
+@media (max-width: 640px) {
+    .title {
+        transform: translateY(20px);
+    }
+    .description__title {
+        font-size: 10vw;
+    }
+    .description__text {
+        display: none;
+    }
+    .pikachu {
+        width: 90vw;
+        transform: translate(-50%, -50%);
+    }
+    .action {
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .action {
+        font-size: 2.5rem;
     }
 }
